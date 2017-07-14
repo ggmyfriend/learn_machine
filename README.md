@@ -1,2 +1,2 @@
 # learn_machine
-the code of the machine learning
+基本都是自己写的，可能存在一些问题
