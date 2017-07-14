@@ -30,7 +30,7 @@ def get_test_train(train_set,length):
 def function_Logistic(a,b,x):
     return 1.0/(1+exp(-a*x[0]-b*x[1]))
 
-x , length  = read_test("E:\pythonFile\machine_learning\logistic_regression_testset.txt")
+x , length  = read_test("logistic_regression_testset.txt") #数据集的位置
 train_para,train_res=get_test_train(x,length)
 foot = 0.001
 print("this is main")
