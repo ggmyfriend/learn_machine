@@ -26,6 +26,8 @@ for i in range(100):
     b = b + sum_b
 plt.plot([h(xi) for xi in x_test],color="yellow")
 print(a,b,sep="\n")
+#以上算法来自网上
+#以下代码来自自己根据理解所学以及上方代码参考所写
 
 #样本如果过大可以选择如下的梯度下降算法(随机梯度下降)  但是样本过小偏差很大，需要在考虑应该怎么写以下伪代码
 '''
