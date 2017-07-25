@@ -35,8 +35,8 @@ def naive_bayes(dic):            #计算p(x|y=?)
                 c=c+1
             if(i in postingList[j] and classVec[j]==0):
                 d=d+1
-        dic_yes[i]=(c+1)/(a+dic.__len__())
-        dic_no[i]=(d+1)/(b+dic.__len__())
+        dic_yes[i]=(c+1)/(a+2) #拉普拉斯平滑
+        dic_no[i]=(d+1)/(b+2)
         print(a,b,dic.__len__(),c, d,dic_yes[i],dic_no[i])
     return dic_yes,dic_no
 
